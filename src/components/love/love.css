@@ -1,0 +1,109 @@
+:root {
+    --balloon1-bg-color: #e5d269;
+    --balloon2-bg-color: #7ce3e3;
+    --balloon3-bg-color: #e7b0e4;
+    --balloon4-bg-color: #ddbbbb;
+    --balloon5-bg-color: #77aabb;
+    --bg-color: #77aabb;
+  }
+  
+  body {
+    background-image: url("../../../images/background.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+
+  .container2{
+    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+
+  .topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding-left: 10%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color:rgb(128, 128, 254);;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 16px;
+    text-decoration:none;
+    font-family:'Cedarville Cursive', cursive;
+    font-size: 20px;
+    border-radius: 25px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: rgb(172, 172, 254);
+    color: #090909;
+    
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  .paper {
+    
+    background: rgb(172, 172, 254);
+    background-size: 400px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+    padding: 60px 60px;
+  /*  min-width: 800px; */
+    /* transform: rotateZ(-5deg); */
+    box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+    
+    position:absolute;
+    
+  }
+
+ .container .paper{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  
+  .paper.image {
+    background: white;
+    padding: 40px;
+  }
+  .paper.image  {
+    font-size: 30px;
+  }
+  
+  img {
+    max-height: 400px;
+    width: 100%;
+    user-select: none;
+  }
+
+  p {
+    font-family: cursive;
+    font-size: 50px;
+    color: rgb(72, 0, 100);
+    opacity: 0.75;
+    user-select: none;
+  }

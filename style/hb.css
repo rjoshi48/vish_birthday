@@ -1,0 +1,277 @@
+:root {
+    --balloon1-bg-color: #e5d269;
+    --balloon2-bg-color: #7ce3e3;
+    --balloon3-bg-color: #e7b0e4;
+    --balloon4-bg-color: #ddbbbb;
+    --balloon5-bg-color: #77aabb;
+    --bg-color: #77aabb;
+  
+    --balloon-anim-1: balloon1 15s ease infinite;
+    --balloon-anim-2: balloon2 5s ease infinite;
+    --balloon-anim-3: balloon3 10s ease infinite;
+    --balloon-anim-4: balloon4 5s ease infinite;
+    --balloon-anim-5: balloon5 15s ease infinite;
+    --balloon-anim-6: balloon7 5s ease infinite;
+  }
+  
+  body {
+    background-image: url("C:/Users/rinni/Downloads/IMG_0252.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  
+  .happy,
+  .birthday,.name {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .balloon {
+    width: 76px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 80%;
+    position: relative;
+  }
+  
+  .balloon::after {
+    position: absolute;
+    bottom: -16px;
+    left: 31px;
+    content: "\2713";
+    transform: rotate(180deg);
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .happy .balloon::before,
+  .birthday .balloon::before, .name .balloon::before{
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 10px);
+    font-size: 30px;
+    font-weight: bold;
+    color: #783f75;
+    font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
+  }
+  
+  .happy .balloon:nth-child(1)::before {
+    content: "H";
+  }
+  .happy .balloon:nth-child(2)::before {
+    content: "A";
+  }
+  .happy .balloon:nth-child(3)::before {
+    content: "P";
+  }
+  .happy .balloon:nth-child(4)::before {
+    content: "P";
+  }
+  .happy .balloon:nth-child(5)::before {
+    content: "Y";
+  }
+  .birthday .balloon:nth-child(1)::before {
+    content: "B";
+  }
+  .birthday .balloon:nth-child(2)::before {
+    content: "I";
+  }
+  .birthday .balloon:nth-child(3)::before {
+    content: "R";
+  }
+  .birthday .balloon:nth-child(4)::before {
+    content: "T";
+  }
+  .birthday .balloon:nth-child(5)::before {
+    content: "H";
+  }
+  .birthday .balloon:nth-child(6)::before {
+    content: "D";
+  }
+  .birthday .balloon:nth-child(7)::before {
+    content: "A";
+  }
+  .birthday .balloon:nth-child(8)::before {
+    content: "Y";
+  }
+  .name .balloon:nth-child(1)::before {
+    content: "V";
+  }
+  .name .balloon:nth-child(2)::before {
+    content: "I";
+  }
+  .name .balloon:nth-child(3)::before {
+    content: "S";
+  }
+  .name .balloon:nth-child(4)::before {
+    content: "H";
+  }
+  
+  @keyframes balloon1 {
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(-10deg);
+    }
+    50% {
+      transform: translate(0, 30px) rotate(10deg);
+    }
+  }
+  
+  @keyframes balloon2 {
+    0%,
+    100% {
+      transform: translate(-20px, 40px) rotate(15deg);
+    }
+    50% {
+      transform: translate(0, -10px) rotate(-5deg);
+    }
+  }
+  
+  @keyframes balloon3 {
+    0%,
+    100% {
+      transform: translate(-30px, 0) rotate(-10deg);
+    }
+    50% {
+      transform: translate(0, -20px) rotate(20deg);
+    }
+  }
+  
+  @keyframes balloon4 {
+    0%,
+    100% {
+      transform: translate(-10px, 0) rotate(0deg);
+    }
+    50% {
+      transform: translate(0, 20px) rotate(30deg);
+    }
+  }
+  
+  @keyframes balloon5 {
+    0%,
+    100% {
+      transform: translate(10px, 0) rotate(20deg);
+    }
+    50% {
+      transform: translate(0, 30px) rotate(-20deg);
+    }
+  }
+  @keyframes balloon6 {
+    0%,
+    100% {
+      transform: translate(-10px, 0) rotate(0deg);
+    }
+    50% {
+      transform: translate(0, 20px) rotate(30deg);
+    }
+  }
+  
+  @keyframes balloon7 {
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(15deg);
+    }
+    50% {
+      transform: translate(0, 0) rotate(-15deg);
+    }
+  }
+  .balloon1 {
+    background: var(--balloon1-bg-color);
+    
+  }
+  .balloon1::after {
+    color: var(--balloon1-bg-color);
+  }
+  
+  .balloon2 {
+    background: var(--balloon2-bg-color);
+    
+  }
+  .balloon2::after {
+    color: var(--balloon2-bg-color);
+  }
+  
+  .balloon3 {
+    background: var(--balloon3-bg-color);
+    
+  }
+  .balloon3::after {
+    color: var(--balloon3-bg-color);
+  }
+  
+  .balloon4 {
+    background: var(--balloon4-bg-color);
+    
+  }
+  .balloon4::after {
+    color: var(--balloon4-bg-color);
+  }
+  .balloon5 {
+    background: var(--balloon5-bg-color);
+    
+  }
+  .balloon5::after {
+    color: var(--balloon5-bg-color);
+  }
+  
+  .balloon-anim1 {
+    animation: var(--balloon-anim-1);
+  }
+  .balloon-anim2 {
+    animation: var(--balloon-anim-2);
+  }
+  .balloon-anim3 {
+    animation: var(--balloon-anim-3);
+  }
+  .balloon-anim4 {
+    animation: var(--balloon-anim-4);
+  }
+  .balloon-anim5 {
+    animation: var(--balloon-anim-5);
+  }
+  .balloon-anim6 {
+    animation: var(--balloon-anim-6);
+  }
+  
+
+  .topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding-left: 10%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color:rgb(128, 128, 254);
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 16px;
+    text-decoration:none;
+    font-family:'Cedarville Cursive', cursive;
+    font-size: 20px;
+    border-radius: 25px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: rgb(172, 172, 254);
+    color: #090909;
+    
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
